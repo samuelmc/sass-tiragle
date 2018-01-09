@@ -6,7 +6,7 @@ bower install --save sass-triangle
 ```
 
 ```
-@import "bower_components/sass-triangle/triangle";
+@import "path-to/bower_components/sass-triangle/triangle";
 ```
 
 ```
