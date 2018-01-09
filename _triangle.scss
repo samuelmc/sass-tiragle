@@ -8,15 +8,21 @@
   $thickness: 1,
   $rounded: 0
 ) {
+  $width: strip-unit($width);
+  $edge: strip-unit($edge);
+  $side: strip-unit($side);
+  $offset: strip-unit($offset);
+  $thickness: strip-unit($thickness);
+  $rounded: strip-unit($rounded);
 
   $square-side-with: sqrt(pow(($width+2), 2) / 2);
   $square-offset: ($width - $square-side-with) / 2;
 
   $rotations: (
-    top: 45deg,
-    left: 135deg,
-    bottom: 225deg,
-    right: 315deg
+          top: 45deg,
+          left: 135deg,
+          bottom: 225deg,
+          right: 315deg
   );
 
   &:before {
