@@ -26,7 +26,7 @@
     width: #{$square-side-with}px;
     height: #{$square-side-with}px;
     #{$edge}: #{((($square-side-with + $thickness) / 2) * (-1))}px;
-    #{$side}: #{($offset + $square-offset)}px;
+    #{$side}: ($offset + $square-offset);
     @if $side == right { left: auto; }
     @if $side == top { bottom: auto; }
     @if $side == left { right: auto; }
